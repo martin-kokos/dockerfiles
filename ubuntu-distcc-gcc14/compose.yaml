@@ -1,0 +1,29 @@
+services:
+  distcc1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3632:3632"
+      - "3633:3633"
+  distcc2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3632:3634"
+      - "3633:3635"
+  distcc3:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3632:3636"
+      - "3633:3637"
+  distcc4:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3632:3638"
+      - "3633:3639"
